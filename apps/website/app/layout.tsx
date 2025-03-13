@@ -1,7 +1,13 @@
+import { ThemeProvider } from "@/components/theme-provider";
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
+
+const editorialNewUltralightItalic = localFont({
+  src: "../fonts/editorial-new-ultralight-italic.ttf",
+  variable: "--editorial-new-ultralight-italic",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="antialiased">
+      <body className={`${editorialNewUltralightItalic.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
