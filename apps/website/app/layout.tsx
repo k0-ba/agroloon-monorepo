@@ -1,6 +1,7 @@
 import { ThemeProvider } from "@/components/theme-provider";
-import type { Metadata } from "next";
+import { Header } from "@/components/header";
 import localFont from "next/font/local";
+import type { Metadata } from "next";
 
 import "./globals.css";
 
@@ -28,7 +29,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <Header />
+
+          <main>{children}</main>
         </ThemeProvider>
       </body>
     </html>
