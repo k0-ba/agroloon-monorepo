@@ -154,7 +154,7 @@ export default function Home() {
             <h2 className="font-editorial text-3xl md:text-5xl font-light text-white/80 tracking-tighter mb-12 text-center">
               Why Agroloon?
             </h2>
-            <div className="text-white/50 font-light space-y-8 mb-16">
+            <div className="text-white/50 font-light space-y-8 mb-16 text-justify">
               <p>
                 Agroloon aims to revolutionize agricultural forecasting by
                 developing a new generation of high-altitude balloon technology.
@@ -247,7 +247,7 @@ export default function Home() {
             <h2 className="font-editorial text-3xl md:text-5xl font-light text-white/80 tracking-tighter mb-12 text-center">
               What We Offer
             </h2>
-            <div className="text-white/50 font-light space-y-8 mb-16">
+            <div className="text-white/50 font-light space-y-8 mb-16 text-justify">
               <p>
                 Agroloon offers a high-altitude balloon system capable of
                 monitoring the state of agricultural fields. The system provides
