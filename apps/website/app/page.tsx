@@ -114,7 +114,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
               <p className="text-sm md:text-base text-white/50 font-light max-w-2xl">
                 We are developing a new generation of high-altitude balloon
-                technology for observations, supporting farmers'
+                technology for observations, supporting farmers&apos;
                 decision-making, and enhancing agricultural predictability.
               </p>
 
@@ -158,7 +158,7 @@ export default function Home() {
               <p>
                 Agroloon aims to revolutionize agricultural forecasting by
                 developing a new generation of high-altitude balloon technology.
-                This innovation supports farmers' decision-making and enhances
+                This innovation supports farmers&apos; decision-making and enhances
                 agricultural predictability by providing high-resolution images
                 from the stratosphere.
               </p>
@@ -258,7 +258,7 @@ export default function Home() {
               <p>
                 This allows for the detection of minor variations in fields on
                 an hourly basis, facilitating effective damage assessment and
-                yield prediction. Moreover, Agroloon's service is
+                yield prediction. Moreover, Agroloon&apos;s service is
                 cost-effective, offering data at less than half the price of
                 existing methods while delivering more accurate data 24/7.
               </p>
