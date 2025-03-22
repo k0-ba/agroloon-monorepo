@@ -1,5 +1,6 @@
 import { PosthogProvider } from "@/components/posthog-provider";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Analytics } from '@vercel/analytics/next';
 import { Header } from "@/components/header";
 import localFont from "next/font/local";
 
@@ -30,6 +31,8 @@ export default function RootLayout({
             <main>{children}</main>
           </ThemeProvider>
         </PosthogProvider>
+
+        <Analytics />
       </body>
     </html>
   );

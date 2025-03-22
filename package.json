@@ -16,6 +16,7 @@
     "apps/website"
   ],
   "dependencies": {
+    "@vercel/analytics": "^1.5.0",
     "posthog-js": "^1.232.4"
   }
 }
