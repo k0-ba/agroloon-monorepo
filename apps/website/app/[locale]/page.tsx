@@ -6,6 +6,7 @@ import { ChevronDown } from "lucide-react";
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { Locale } from "@/utils/i18n";
 
 const topLayerImages = [
   {
@@ -83,13 +84,14 @@ const bottomLayerImages = [
   },
 ];
 
-export default function Home() {
+export default function Page() {
   const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement | null>(null);
 
   return (
     <div className="min-h-screen bg-[#0A0F08] text-white" ref={rootRef}>
       {/* Hero Section */}
+
       <section className="relative h-screen flex flex-col justify-end overflow-hidden pb-20">
         {/* Background Video */}
         <div className="absolute inset-0 z-0">
