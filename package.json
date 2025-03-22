@@ -14,5 +14,10 @@
   "packageManager": "bun@1.2.2",
   "workspaces": [
     "apps/website"
-  ]
+  ],
+  "dependencies": {
+    "@vercel/analytics": "^1.5.0",
+    "posthog-js": "^1.232.4",
+    "react-calendly": "^4.3.1"
+  }
 }

@@ -1,4 +1,6 @@
+import { PosthogProvider } from "@/components/posthog-provider";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Analytics } from '@vercel/analytics/next';
 import { Header } from "@/components/header";
 import localFont from "next/font/local";
 
@@ -17,16 +19,20 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${editorialNewUltralightItalic.variable} antialiased`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Header />
+        <PosthogProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Header />
 
-          <main>{children}</main>
-        </ThemeProvider>
+            <main>{children}</main>
+          </ThemeProvider>
+        </PosthogProvider>
+
+        <Analytics />
       </body>
     </html>
   );
