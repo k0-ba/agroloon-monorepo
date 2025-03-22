@@ -14,5 +14,8 @@
   "packageManager": "bun@1.2.2",
   "workspaces": [
     "apps/website"
-  ]
+  ],
+  "dependencies": {
+    "posthog-js": "^1.232.4"
+  }
 }
