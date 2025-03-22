@@ -5,6 +5,8 @@ import { useEffect } from "react";
 import posthog from "posthog-js";
 
 export function PosthogProvider({ children }: { children: React.ReactNode }) {
+  if (process.env.NODE_ENV === "development") return children;
+
   useEffect(() => {
     posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY as string, {
       api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST as string,
