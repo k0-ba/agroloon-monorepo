@@ -25,7 +25,7 @@ export function HeroSection({ heroTranslations }: HeroSectionProps) {
           loop
           playsInline
           src="/ascending-drone-footage.mp4"
-          poster="/placeholder.svg?height=1080&width=1920"
+          poster="/ascending-drone-first-frame.jpg"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/80" />
       </div>
