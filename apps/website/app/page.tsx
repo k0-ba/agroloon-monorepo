@@ -1,7 +1,9 @@
 "use client";
 
 import { ScrollingGallery } from "@/components/scrolling-gallery";
+import { PopupModal } from "react-calendly";
 import { ChevronDown } from "lucide-react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -82,8 +84,11 @@ const bottomLayerImages = [
 ];
 
 export default function Home() {
+  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
+  const rootRef = useRef<HTMLDivElement | null>(null);
+
   return (
-    <div className="min-h-screen bg-[#0A0F08] text-white">
+    <div className="min-h-screen bg-[#0A0F08] text-white" ref={rootRef}>
       {/* Hero Section */}
       <section className="relative h-screen flex flex-col justify-end overflow-hidden pb-20">
         {/* Background Video */}
@@ -119,12 +124,12 @@ export default function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
-                <Link
-                  href="#contact"
+                <button
+                  onClick={() => setIsCalendlyOpen(true)}
                   className="px-8 py-4 border border-white/20 rounded-full text-white/70 hover:bg-white/5 hover:text-white/90 transition-all text-center"
                 >
-                  Contact Us
-                </Link>
+                  Schedule a Demo
+                </button>
                 <Link
                   href="#why"
                   className="px-8 py-4 bg-white/10 hover:bg-white/15 border border-white/20 rounded-full text-white/90 hover:text-white transition-all text-center"
@@ -158,9 +163,9 @@ export default function Home() {
               <p>
                 Agroloon aims to revolutionize agricultural forecasting by
                 developing a new generation of high-altitude balloon technology.
-                This innovation supports farmers&apos; decision-making and enhances
-                agricultural predictability by providing high-resolution images
-                from the stratosphere.
+                This innovation supports farmers&apos; decision-making and
+                enhances agricultural predictability by providing
+                high-resolution images from the stratosphere.
               </p>
               <p>
                 Our system enables the detection of the smallest differences in
@@ -322,14 +327,12 @@ export default function Home() {
               >
                 Get Started
               </Link>
-              <Link
-                href="https://agroloon.com"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => setIsCalendlyOpen(true)}
                 className="px-8 py-4 border border-white/20 rounded-full text-white/70 hover:bg-white/5 hover:text-white/90 transition-all w-full md:w-auto text-center"
               >
                 Schedule a Demo
-              </Link>
+              </button>
             </div>
           </div>
         </div>
@@ -561,6 +564,15 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {rootRef.current && (
+        <PopupModal
+          url={process.env.NEXT_PUBLIC_CALENDLY_URL as string}
+          onModalClose={() => setIsCalendlyOpen(false)}
+          open={isCalendlyOpen}
+          rootElement={rootRef.current}
+        />
+      )}
     </div>
   );
 }
