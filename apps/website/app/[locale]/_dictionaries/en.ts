@@ -3,18 +3,30 @@ import type { Dictionary } from "./index";
 const en: Dictionary = {
   hero: {
     title: "High-Resolution from the Stratosphere",
-    description:
-      "At Agroloon, we are revolutionizing high-altitude balloon technology for precision agriculture. Our advanced imaging systems deliver actionable insights, empowering farmers and agribusinesses to optimize their operations.",
+    description: `
+      We are developing a new generation of high-altitude balloon technology for
+      observations, supporting farmers' decision-making, and enhancing
+      agricultural predictability.
+    `.trim(),
     schedule: "Schedule a Demo",
     getStarted: "Get Started",
   },
   why: {
     title: "Why Agroloon?",
-    paragraph1:
-      "Agroloon is revolutionizing agricultural forecasting with next-generation high-altitude balloon technology. We deliver high-resolution stratospheric imagery that supports precision farming and empowers decision-making.",
-    paragraph2:
-      "Our system detects subtle variations in fields every hour, enabling timely damage assessments and accurate yield predictions. By offering unparalleled insights into crop health, Agroloon helps maximize productivity and reduce waste.",
-    whoWeServe: "Who We Serve",
+    paragraph1: `
+      Agroloon aims to revolutionize agricultural forecasting by developing a
+      new generation of high-altitude balloon technology. This innovation
+      supports farmers' decision-making and enhances agricultural predictability
+      by providing high-resolution images from the stratosphere.
+    `.trim(),
+    paragraph2: `
+      Our system enables the detection of the smallest differences in fields on
+      an hourly basis, leading to effective damage assessment and yield
+      prediction. By providing unprecedented visibility into crop health and
+      field conditions, we empower agricultural stakeholders to make data-driven
+      decisions that optimize yield and reduce waste.
+    `.trim(),
+    whoWeServe: "who we serve",
     serveItems: {
       farmers: "Farmers",
       agribusinesses: "Agribusinesses",
@@ -26,19 +38,28 @@ const en: Dictionary = {
   },
   what: {
     title: "What We Offer",
-    paragraph1:
-      "Agroloon delivers a state-of-the-art high-altitude balloon system that monitors agricultural fields with unparalleled precision. Our system captures ultra-high-resolution imagery at 5×5 cm—600% higher quality than standard satellite images.",
-    paragraph2:
-      "This breakthrough enables hourly detection of subtle field variations, allowing for timely damage assessments and reliable yield predictions. Plus, our service is cost-efficient, providing superior data at less than half the cost of traditional methods.",
-    byTheNumbers: "By the Numbers",
+    paragraph1: `
+      Agroloon offers a high-altitude balloon system capable of monitoring the
+      state of agricultural fields. The system provides ultra-high-resolution
+      images with a resolution of 5x5 cm, which is approximately 600% higher
+      quality than average satellite images.
+    `.trim(),
+    paragraph2: `
+      This allows for the detection of minor variations in fields on an hourly
+      basis, facilitating effective damage assessment and yield prediction.
+      Moreover, Agroloon's service is cost-effective, offering data at less than
+      half the price of existing methods while delivering more accurate data
+      24/7.
+    `.trim(),
+    byTheNumbers: "by the numbers",
     stats: [
       {
         value: "600%",
         description: "Higher quality than average satellite imagery",
       },
       {
-        value: "5×5 cm",
-        description: "Ultra-high precision imaging resolution",
+        value: "5\u00D75 cm",
+        description: "Ultra-high precision per pixel",
       },
       {
         value: "50%",
@@ -48,8 +69,11 @@ const en: Dictionary = {
   },
   cta: {
     title: "Ready to Transform Your Agricultural Insights?",
-    description:
-      "Discover the power of precision agriculture. With Agroloon's advanced imaging solutions, gain insights that transform your farming operations and drive sustainable growth.",
+    description: `
+      Discover the power of precision agriculture. With Agroloon's advanced
+      imaging solutions, gain insights that transform your farming operations
+      and drive sustainable growth.
+    `.trim(),
     getStarted: "Get Started",
     schedule: "Schedule a Demo",
   },
