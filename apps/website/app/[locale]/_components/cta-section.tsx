@@ -1,8 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { useLandingPageContext } from "../_components/context-provider";
 import { Dictionary } from "../_dictionaries";
+import { Balancer } from "react-wrap-balancer"
 
 interface CTASectionProps {
   ctaTranslations: Dictionary["cta"];
@@ -16,7 +16,9 @@ export function CTASection({ ctaTranslations }: CTASectionProps) {
       <div className="container mx-auto px-8">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-editorial text-3xl md:text-5xl text-white/80 tracking-tighter mb-8">
+            <Balancer>
             {ctaTranslations.title}
+            </Balancer>
           </h2>
           <p className="text-white/50 font-light text-base mb-12">
             {ctaTranslations.description}
