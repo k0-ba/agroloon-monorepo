@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { Dictionary } from "../_dictionaries";
+import Image from "next/image";
 
 interface FooterProps {
   footerTranslations: Dictionary["footer"];
@@ -95,9 +96,12 @@ export function Footer({ footerTranslations }: FooterProps) {
         <div className="flex flex-col md:flex-row justify-between items-start mb-16">
           <div className="mb-8 md:mb-0">
             <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
-              <h3 className="font-editorial text-2xl font-light text-white/80 tracking-tighter">
-                agroloon
-              </h3>
+              <Image
+                src="/agroloon.svg"
+                alt="agroloon logo"
+                width={90}
+                height={30}
+              />
               <p className="text-white/40 text-sm">
                 © {new Date().getFullYear()} All rights reserved.
               </p>
