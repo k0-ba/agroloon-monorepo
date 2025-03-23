@@ -2,7 +2,6 @@
 
 import { ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { useLandingPageContext } from "./context-provider";
 import { Dictionary } from "../_dictionaries";
 
