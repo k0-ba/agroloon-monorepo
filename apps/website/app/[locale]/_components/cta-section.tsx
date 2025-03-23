@@ -22,12 +22,12 @@ export function CTASection({ ctaTranslations }: CTASectionProps) {
             {ctaTranslations.description}
           </p>
           <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-            <Link
+            {/* <Link
               href="mailto:info@agroloon.com"
               className="px-8 py-4 bg-white/10 hover:bg-white/15 border border-white/20 rounded-full text-white/90 hover:text-white transition-all w-full md:w-auto text-center"
             >
               {ctaTranslations.getStarted}
-            </Link>
+            </Link> */}
             <button
               onClick={openCalendly}
               className="px-8 py-4 border border-white/20 rounded-full text-white/70 hover:bg-white/5 hover:text-white/90 transition-all w-full md:w-auto text-center"
