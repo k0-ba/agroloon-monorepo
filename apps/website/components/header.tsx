@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,9 +25,12 @@ export function Header() {
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex justify-between items-center">
           <Link href="/" className="flex items-center">
-            <h1 className="font-editorial text-2xl md:text-3xl font-light text-white/90 tracking-tighter">
-              agroloon
-            </h1>
+            <Image
+              src="/agroloon.svg"
+              alt="Agroloon"
+              width={120}
+              height={40}
+            />
           </Link>
         </div>
       </div>

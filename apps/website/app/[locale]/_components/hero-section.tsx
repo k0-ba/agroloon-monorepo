@@ -2,7 +2,6 @@
 
 import { ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { useLandingPageContext } from "./context-provider";
 import { Dictionary } from "../_dictionaries";
 
@@ -53,12 +52,12 @@ export function HeroSection({ heroTranslations }: HeroSectionProps) {
               >
                 {heroTranslations.schedule}
               </button>
-              <Link
+              {/* <Link
                 href="#why"
                 className="px-8 py-4 bg-white/10 hover:bg-white/15 border border-white/20 rounded-full text-white/90 hover:text-white transition-all text-center"
               >
                 {heroTranslations.getStarted}
-              </Link>
+              </Link> */}
             </div>
           </div>
         </motion.div>
