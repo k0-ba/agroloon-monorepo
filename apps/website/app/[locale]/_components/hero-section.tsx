@@ -36,7 +36,7 @@ export function HeroSection({ heroTranslations }: HeroSectionProps) {
           transition={{ duration: 0.8 }}
           className="w-full"
         >
-          <h1 className="font-editorial text-3xl md:text-5xl lg:text-6xl font-light text-white/90 tracking-tighter mb-12 w-full">
+          <h1 className="font-space-mono text-3xl md:text-5xl lg:text-6xl font-light text-white/90 tracking-tighter mb-12 w-full">
             {heroTranslations.title}
           </h1>
 

@@ -2,13 +2,14 @@ import { PosthogProvider } from "@/components/posthog-provider";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Analytics } from '@vercel/analytics/next';
 import { Header } from "@/components/header";
-import localFont from "next/font/local";
+import { Space_Mono } from "next/font/google";
 
 import "./globals.css";
 
-const editorialNewUltralightItalic = localFont({
-  src: "../fonts/editorial-new-ultralight-italic.ttf",
-  variable: "--editorial-new-ultralight-italic",
+const spaceMono = Space_Mono({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--space-mono",
 });
 
 export default function RootLayout({
@@ -18,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${editorialNewUltralightItalic.variable} antialiased`}>
+      <body className={`${spaceMono.variable} antialiased`}>
         <PosthogProvider>
           <ThemeProvider
             attribute="class"
