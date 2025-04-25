@@ -2,6 +2,8 @@
 
 import { useRef, useEffect } from "react";
 import Image from "next/image";
+import { cn } from "@/utils/tailwind";
+import Balancer from "react-wrap-balancer";
 
 interface ScrollingGalleryProps {
   images: {
@@ -103,14 +105,19 @@ export function ScrollingGallery({
     >
       <div
         ref={innerRef}
-        className="flex whitespace-nowrap"
+        className={cn(
+          "flex whitespace-nowrap",
+          notePosition === "top" ? "items-end" : "items-start"
+        )}
         style={{ willChange: "transform" }}
       >
         {triplicatedImages.map((image, index) => (
           <div key={index} className="relative inline-block flex-shrink-0 mx-1">
             {notePosition === "top" && (
-              <div className="text-[10px] text-white/50 text-center mb-1">
-                {image.note}
+              <div className="text-sm text-white/70 max-w-[280px] md:max-w-[340px] mb-1 overflow-hidden text-center">
+                <p className="whitespace-normal line-clamp-2">
+                  <Balancer>{image.note}</Balancer>
+                </p>
               </div>
             )}
             <div className="relative h-[180px] w-[280px] md:h-[220px] md:w-[340px] overflow-hidden rounded-md">
@@ -122,8 +129,10 @@ export function ScrollingGallery({
               />
             </div>
             {notePosition === "bottom" && (
-              <div className="text-[10px] text-white/50 text-center mt-1">
-                {image.note}
+              <div className="text-sm text-white/70 max-w-[280px] md:max-w-[340px] mt-1 overflow-hidden text-center">
+                <p className="whitespace-normal line-clamp-2">
+                  <Balancer>{image.note}</Balancer>
+                </p>
               </div>
             )}
           </div>

@@ -18,16 +18,16 @@ export function WhatSection({ whatTranslations }: WhatSectionProps) {
           viewport={{ once: true }}
           className="max-w-3xl mx-auto"
         >
-          <h2 className="font-editorial text-3xl md:text-5xl font-light text-white/80 tracking-tighter mb-12 text-center">
+          <h2 className="font-space-mono text-3xl md:text-5xl font-light text-white/80 tracking-tighter mb-12 text-center">
             {whatTranslations.title}
           </h2>
-          <div className="text-white/50 font-light space-y-8 mb-16 text-justify">
+          <div className="text-white/70 font-light space-y-8 mb-16 text-justify">
             <p>{whatTranslations.paragraph1}</p>
             <p>{whatTranslations.paragraph2}</p>
           </div>
           <div className="relative flex items-center justify-center mb-16">
             <div className="absolute w-full border-t border-white/10"></div>
-            <span className="font-editorial relative px-4 bg-[#0A0F08] text-white/60 text-lg font-light">
+            <span className="font-space-mono relative px-4 bg-[#0A0F08] text-white/60 text-lg font-light">
               {whatTranslations.byTheNumbers}
             </span>
           </div>
@@ -37,10 +37,10 @@ export function WhatSection({ whatTranslations }: WhatSectionProps) {
                 key={index}
                 className="flex flex-col items-center text-center"
               >
-                <h3 className="font-editorial text-3xl md:text-4xl font-light text-white/80 tracking-tighter mb-4">
+                <h3 className="font-space-mono text-3xl md:text-4xl font-light text-white/80 tracking-tighter mb-4">
                   {stat.value}
                 </h3>
-                <p className="text-white/50 font-light">{stat.description}</p>
+                <p className="text-white/70 font-light">{stat.description}</p>
               </div>
             ))}
           </div>

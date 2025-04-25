@@ -18,16 +18,16 @@ export function WhySection({ whyTranslations }: WhySectionProps) {
           viewport={{ once: true }}
           className="max-w-3xl mx-auto"
         >
-          <h2 className="font-editorial text-3xl md:text-5xl font-light text-white/80 tracking-tighter mb-12 text-center">
+          <h2 className="font-space-mono text-3xl md:text-5xl font-light text-white/80 tracking-tighter mb-12 text-center">
             {whyTranslations.title}
           </h2>
-          <div className="text-white/50 font-light space-y-8 mb-16 text-justify">
+          <div className="text-white/70 font-light space-y-8 mb-16 text-justify">
             <p>{whyTranslations.paragraph1}</p>
             <p>{whyTranslations.paragraph2}</p>
           </div>
           <div className="relative flex items-center justify-center mb-16">
             <div className="absolute w-full border-t border-white/10"></div>
-            <span className="font-editorial relative px-4 bg-[#0A0F08] text-white/60 text-lg font-light">
+            <span className="font-space-mono relative px-4 bg-[#0A0F08] text-white/60 text-lg font-light">
               {whyTranslations.whoWeServe}
             </span>
           </div>

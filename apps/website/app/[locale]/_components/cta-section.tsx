@@ -15,12 +15,12 @@ export function CTASection({ ctaTranslations }: CTASectionProps) {
     <section className="py-32">
       <div className="container mx-auto px-8">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="font-editorial text-3xl md:text-5xl text-white/80 tracking-tighter mb-8">
+          <h2 className="font-space-mono text-3xl md:text-5xl text-white/80 tracking-tighter mb-8">
             <Balancer>
             {ctaTranslations.title}
             </Balancer>
           </h2>
-          <p className="text-white/50 font-light text-base mb-12">
+          <p className="text-white/70 font-light text-base mb-12">
             {ctaTranslations.description}
           </p>
           <div className="flex flex-col md:flex-row items-center justify-center gap-6">
@@ -32,7 +32,7 @@ export function CTASection({ ctaTranslations }: CTASectionProps) {
             </Link> */}
             <button
               onClick={openCalendly}
-              className="px-8 py-4 border border-white/20 rounded-full text-white/70 hover:bg-white/5 hover:text-white/90 transition-all w-full md:w-auto text-center"
+              className="px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/30 rounded-full text-white hover:text-white transition-all w-full md:w-auto text-center font-medium"
             >
               {ctaTranslations.schedule}
             </button>

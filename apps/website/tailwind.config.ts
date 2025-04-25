@@ -89,7 +89,7 @@ const config: Config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        editorial: "var(--editorial-new-ultralight-italic)",
+        "space-mono": "var(--space-mono)",
       },
     },
   },

@@ -17,7 +17,7 @@ function FooterNav({
 }) {
   return (
     <div>
-      <h4 className="font-editorial text-xl font-light text-white/80 mb-4">
+      <h4 className="font-space-mono text-xl font-light text-white/80 mb-4">
         {title}
       </h4>
       <ul className="space-y-2 text-white/50 text-base">
