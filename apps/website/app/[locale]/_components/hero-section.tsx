@@ -41,14 +41,14 @@ export function HeroSection({ heroTranslations }: HeroSectionProps) {
           </h1>
 
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
-            <p className="text-sm md:text-base text-white/50 font-light max-w-2xl">
+            <p className="text-sm md:text-base text-white/90 font-light max-w-2xl">
               {heroTranslations.description}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
               <button
                 onClick={openCalendly}
-                className="px-8 py-4 border border-white/20 rounded-full text-white/70 hover:bg-white/5 hover:text-white/90 transition-all text-center"
+                className="px-8 py-4 bg-white/20 border border-white/40 rounded-full text-white/90 hover:bg-white/30 hover:text-white transition-all text-center"
               >
                 {heroTranslations.schedule}
               </button>

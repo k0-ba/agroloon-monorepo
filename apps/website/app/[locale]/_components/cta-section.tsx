@@ -32,7 +32,7 @@ export function CTASection({ ctaTranslations }: CTASectionProps) {
             </Link> */}
             <button
               onClick={openCalendly}
-              className="px-8 py-4 border border-white/20 rounded-full text-white/70 hover:bg-white/5 hover:text-white/90 transition-all w-full md:w-auto text-center"
+              className="px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/30 rounded-full text-white hover:text-white transition-all w-full md:w-auto text-center font-medium"
             >
               {ctaTranslations.schedule}
             </button>
