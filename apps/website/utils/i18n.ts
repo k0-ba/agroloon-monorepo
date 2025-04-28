@@ -5,10 +5,10 @@ export const locales = ["hu", "en"] as const;
 
 export type Locale = (typeof locales)[number];
 
-export function loadAndGetCorrectDictionary(
+export function loadAndGetCorrectDictionary<T extends Record<string, any>>(
   locale: string,
-  dictionaries: Record<Locale, Dictionary>
-): Dictionary {
+  dictionaries: Record<Locale, T>
+): T {
   const supportedLocales: Locale[] = ["en", "hu"];
   if (!supportedLocales.includes(locale as Locale)) {
     console.warn(`Unsupported locale: ${locale}. Falling back to 'en'.`);
