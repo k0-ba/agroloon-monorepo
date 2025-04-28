@@ -5,7 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate-middleware-config": "bun scripts/generate-middleware-config.ts",
+    "predev": "bun run generate-middleware-config",
+    "prebuild": "bun run generate-middleware-config"
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.6.0",
