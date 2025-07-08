@@ -84,10 +84,10 @@ export function Footer({ footerTranslations }: FooterProps) {
   ];
 
   const socialLinks = [
-    { label: "Twitter", href: "https://twitter.com" },
-    { label: "Linked In", href: "https://linkedin.com" },
-    { label: "Instagram", href: "https://instagram.com" },
-    { label: "Youtube", href: "https://youtube.com" },
+    // { label: "Twitter", href: "https://twitter.com" },
+    { label: "Linked In", href: "https://linkedin.com/company/agroloon" }
+    // { label: "Instagram", href: "https://instagram.com" },
+    // { label: "Youtube", href: "https://youtube.com" },
   ];
 
   return (
