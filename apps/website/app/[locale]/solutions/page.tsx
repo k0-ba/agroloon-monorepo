@@ -308,7 +308,7 @@ const useCases: UseCase[] = [
 
 export default function SolutionsPage() {
   const [selectedUseCase, setSelectedUseCase] = useState<string>("agriculture");
-  const [isInitialLoad, setIsInitialLoad] = useState(true);
+  const [shouldScroll, setShouldScroll] = useState(false);
   const { openCalendly } = useLandingPageContext();
   const contentRef = useRef<HTMLDivElement>(null);
   const dividerRef = useRef<HTMLDivElement>(null);
@@ -318,34 +318,37 @@ export default function SolutionsPage() {
     const hash = window.location.hash.replace('#', '');
     if (hash && useCases.find(uc => uc.id === hash)) {
       setSelectedUseCase(hash);
+      setShouldScroll(true); // Only scroll if there's a hash in URL
     }
-    setIsInitialLoad(false);
   }, []);
 
   // Update URL fragment when selection changes and scroll to content
   useEffect(() => {
-    window.history.replaceState(null, '', `/solutions#${selectedUseCase}`);
-    
-    // Scroll to divider line when use case changes (but not on initial load)
-    if (dividerRef.current && !isInitialLoad) {
-      setTimeout(() => {
-        // Position divider line (bottom border of section) exactly at the bottom of the header
-        const headerHeight = 120; // Full header height including padding
-        const sectionBottom = dividerRef.current!.getBoundingClientRect().bottom + window.pageYOffset;
-        const targetScrollPosition = sectionBottom - headerHeight;
-        
-        window.scrollTo({
-          top: targetScrollPosition,
-          behavior: 'smooth'
-        });
-      }, 100);
+    // Only update URL and scroll when there's user interaction
+    if (shouldScroll) {
+      window.history.replaceState(null, '', `/solutions#${selectedUseCase}`);
+      
+      if (dividerRef.current) {
+        setTimeout(() => {
+          // Position divider line (bottom border of section) exactly at the bottom of the header
+          const headerHeight = 120; // Full header height including padding
+          const sectionBottom = dividerRef.current!.getBoundingClientRect().bottom + window.pageYOffset;
+          const targetScrollPosition = sectionBottom - headerHeight;
+          
+          window.scrollTo({
+            top: targetScrollPosition,
+            behavior: 'smooth'
+          });
+        }, 100);
+      }
     }
-  }, [selectedUseCase, isInitialLoad]);
+  }, [selectedUseCase, shouldScroll]);
 
   const currentUseCase = useCases.find(uc => uc.id === selectedUseCase) || useCases[0];
 
   const handleUseCaseChange = (useCaseId: string) => {
     setSelectedUseCase(useCaseId);
+    setShouldScroll(true); // Enable scroll for user interactions
   };
 
   return (
