@@ -11,6 +11,10 @@ export type Dictionary = {
     title: string;
     paragraph1: string;
     paragraph2: string;
+    paragraph3: string;
+    paragraph4: string;
+    readMore: string;
+    readLess: string;
     whoWeServe: string;
     serveItems: {
       farmers: string;
@@ -20,6 +24,7 @@ export type Dictionary = {
       research: string;
       consultants: string;
     };
+    solutions: string;
   };
   what: {
     title: string;

@@ -2,11 +2,9 @@ import type { Dictionary } from "./index";
 
 const en: Dictionary = {
   hero: {
-    title: "High-Resolution from the Stratosphere",
+    title: "Stratospheric Intelligence for Every Industry",
     description: `
-      We are developing a new generation of high-altitude balloon technology for
-      observations, supporting farmers' decision-making, and enhancing
-      agricultural predictability.
+      We are revolutionizing large-area observation with advanced high-altitude balloon technology, delivering critical insights from the stratosphere to support decision-making across diverse sectors and applications.
     `.trim(),
     schedule: "Schedule a Demo",
     getStarted: "Get Started",
@@ -14,19 +12,20 @@ const en: Dictionary = {
   why: {
     title: "Why Agroloon?",
     paragraph1: `
-      Agroloon aims to revolutionize agricultural forecasting by developing a
-      new generation of high-altitude balloon technology. This innovation
-      supports farmers' decision-making and enhances agricultural predictability
-      by providing high-resolution images from the stratosphere.
+      Agroloon revolutionizes large-area monitoring with high-altitude balloon technology that delivers continuous, high-resolution imagery from the stratosphere.
     `.trim(),
     paragraph2: `
-      Our system enables the detection of the smallest differences in fields on
-      an hourly basis, leading to effective damage assessment and yield
-      prediction. By providing unprecedented visibility into crop health and
-      field conditions, we empower agricultural stakeholders to make data-driven
-      decisions that optimize yield and reduce waste.
+      Our system provides unprecedented visibility across diverse industries—from agriculture and insurance to disaster response and infrastructure monitoring.
     `.trim(),
-    whoWeServe: "who we serve",
+    paragraph3: `
+      By detecting critical changes across 800 km² coverage areas in near real-time, we enable faster decision-making, rapid damage assessment, and early threat detection.
+    `.trim(),
+    paragraph4: `
+      Agroloon surpasses traditional satellite limitations while eliminating the risks and costs of crewed aircraft, empowering organizations to respond faster and operate more efficiently across multiple sectors.
+    `.trim(),
+    readMore: "Read more",
+    readLess: "Read less",
+    whoWeServe: "who we serve & how?",
     serveItems: {
       farmers: "Farmers",
       agribusinesses: "Agribusinesses",
@@ -35,6 +34,7 @@ const en: Dictionary = {
       research: "Research Institutions",
       consultants: "Agricultural Consultants",
     },
+    solutions: "Solutions",
   },
   what: {
     title: "What We Offer",

@@ -2,10 +2,9 @@ import type { Dictionary } from "./index";
 
 const hu: Dictionary = {
   hero: {
-    title: "Nagy felbontás a sztratoszférából",
+    title: "Sztratoszférikus intelligencia minden iparág számára",
     description: `
-      Új generációs magaslégköri ballon technológiát fejlesztünk megfigyelésekhez,
-      hogy segítsük a gazdák döntéseit és javítsuk a mezőgazdasági előrejelzéseket.
+      Forradalmasítjuk a nagyterületű megfigyelést fejlett magaslégköri ballon technológiával, kritikus betekintéseket nyújtva a sztratoszférából a döntéshozatal támogatásához különböző szektorokban és alkalmazásokban.
     `.trim(),
     schedule: "Időpont egyeztetése",
     getStarted: "Kezdd el",
@@ -13,18 +12,20 @@ const hu: Dictionary = {
   why: {
     title: "Miért az Agroloon?",
     paragraph1: `
-      Az Agroloon célja, hogy forradalmasítsa a mezőgazdasági előrejelzéseket
-      egy új generációs magaslégköri ballon technológia segítségével. Ez az újítás támogatja a gazdák döntéshozatalát és javítja a mezőgazdasági
-      kiszámíthatóságot a sztratoszférából készült nagy felbontású képekkel.
+      Az Agroloon forradalmasítja a nagyterületű megfigyelést magaslégköri ballon technológiával, amely folyamatos, nagy felbontású képalkotást biztosít a sztratoszférából.
     `.trim(),
     paragraph2: `
-      Rendszerünk óránkénti pontossággal képes kimutatni a legkisebb eltéréseket is
-      a földeken, ami segíti a károk felmérését és a terméshozam előrejelzését.
-      Soha nem látott rálátást biztosít a növényállapotra és a földek állapotára,
-      így a mezőgazdasági szereplők adatvezérelt döntéseket hozhatnak, amivel
-      optimalizálhatják a termést és csökkenthetik a pazarlást.
+      Rendszerünk példátlan rálátást nyújt különböző iparágakban—a mezőgazdaságtól és biztosítástól kezdve a katasztrófa-elhárításig és infrastruktúra-megfigyelésig.
     `.trim(),
-    whoWeServe: "ügyfeleink",
+    paragraph3: `
+      A 800 km²-es területeken való kritikus változások közel valós idejű észlelésével gyorsabb döntéshozatalt, azonnali kárfelmérést és korai veszélyforrás-felismerést teszünk lehetővé.
+    `.trim(),
+    paragraph4: `
+      Az Agroloon felülmúlja a hagyományos műholdas korlátozásokat, miközben kiküszöböli a személyzetes repülőgépek kockázatait és költségeit, így a szervezetek gyorsabban reagálhatnak és hatékonyabban működhetnek több szektorban.
+    `.trim(),
+    readMore: "Tovább olvasom",
+    readLess: "Kevesebbet",
+    whoWeServe: "kit szolgálunk & hogyan?",
     serveItems: {
       farmers: "Gazdák",
       agribusinesses: "Mezőgazdasági vállalkozások",
@@ -33,6 +34,7 @@ const hu: Dictionary = {
       research: "Kutatóintézetek",
       consultants: "Mezőgazdasági tanácsadók",
     },
+    solutions: "Megoldásaink",
   },
   what: {
     title: "Megoldásaink",
