@@ -78,11 +78,11 @@ const en: Dictionary = {
     ],
   },
   cta: {
-    title: "Ready to Transform Your Agricultural Insights?",
+    title: "Ready to Transform Your Monitoring Capabilities?",
     description: `
-      Discover the power of precision agriculture. With Agroloon's advanced
-      imaging solutions, gain insights that transform your farming operations
-      and drive sustainable growth.
+      Discover the power of stratospheric intelligence. 
+
+      With Agroloon's advanced high-altitude imaging solutions, gain unprecedented insights that transform your operations across diverse sectors.
     `.trim(),
     getStarted: "Get Started",
     schedule: "Schedule a Demo",

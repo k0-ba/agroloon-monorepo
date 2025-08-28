@@ -14,15 +14,20 @@ export function CTASection({ ctaTranslations }: CTASectionProps) {
   return (
     <section className="py-32">
       <div className="container mx-auto px-8">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="font-space-mono text-3xl md:text-5xl text-white/80 tracking-tighter mb-8">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-space-mono text-3xl md:text-5xl text-white/80 tracking-tighter mb-8 text-center">
             <Balancer>
             {ctaTranslations.title}
             </Balancer>
           </h2>
-          <p className="text-white/70 font-light text-base mb-12">
-            {ctaTranslations.description}
-          </p>
+          <div className="max-w-2xl mx-auto text-white/70 font-light text-base mb-12 space-y-4">
+            <p className="text-justify font-semibold">
+              Discover the power of stratospheric intelligence.
+            </p>
+            <p className="text-justify">
+              With Agroloon's advanced high-altitude imaging solutions, gain unprecedented insights that transform your operations across diverse sectors.
+            </p>
+          </div>
           <div className="flex flex-col md:flex-row items-center justify-center gap-6">
             {/* <Link
               href="mailto:info@agroloon.com"
