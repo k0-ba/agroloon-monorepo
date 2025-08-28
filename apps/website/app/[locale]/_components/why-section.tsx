@@ -86,41 +86,93 @@ export function WhySection({ whyTranslations }: WhySectionProps) {
               {whyTranslations.whoWeServe}
             </span>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <button className="flex items-center gap-3 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group">
-              <span className="text-xl text-white/40 group-hover:text-white/60 transition-colors">🌾</span>
-              <span className="text-white/60 group-hover:text-white/80 font-light transition-colors">
-                {whyTranslations.serveItems.farmers}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <button className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
+              <div className="flex items-center justify-between w-full">
+                <span className="text-white/60 group-hover:text-white/80 font-space-mono font-light transition-colors text-sm">
+                  {whyTranslations.serveItems.agriculture}
+                </span>
+                <span className="text-lg text-white/40 group-hover:text-white/60 transition-colors ml-2">🌾</span>
+              </div>
+              <span className="text-[11px] text-white/40 group-hover:text-white/50 transition-colors font-light">
+                {whyTranslations.serveItems.agriculturalDesc}
               </span>
             </button>
-            <button className="flex items-center gap-3 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group">
-              <span className="text-xl text-white/40 group-hover:text-white/60 transition-colors">🏢</span>
-              <span className="text-white/60 group-hover:text-white/80 font-light transition-colors">
-                {whyTranslations.serveItems.agribusinesses}
+            <button className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
+              <div className="flex items-center justify-between w-full">
+                <span className="text-white/60 group-hover:text-white/80 font-space-mono font-light transition-colors text-sm">
+                  {whyTranslations.serveItems.insurance}
+                </span>
+                <span className="text-lg text-white/40 group-hover:text-white/60 transition-colors ml-2">🛡️</span>
+              </div>
+              <span className="text-[11px] text-white/40 group-hover:text-white/50 transition-colors font-light">
+                {whyTranslations.serveItems.insuranceDesc}
               </span>
             </button>
-            <button className="flex items-center gap-3 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group">
-              <span className="text-xl text-white/40 group-hover:text-white/60 transition-colors">🔍</span>
-              <span className="text-white/60 group-hover:text-white/80 font-light transition-colors">
-                {whyTranslations.serveItems.insurance}
+            <button className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
+              <div className="flex items-center justify-between w-full">
+                <span className="text-white/60 group-hover:text-white/80 font-space-mono font-light transition-colors text-sm">
+                  {whyTranslations.serveItems.emergency}
+                </span>
+                <span className="text-lg text-white/40 group-hover:text-white/60 transition-colors ml-2">🚨</span>
+              </div>
+              <span className="text-[11px] text-white/40 group-hover:text-white/50 transition-colors font-light">
+                {whyTranslations.serveItems.emergencyDesc}
               </span>
             </button>
-            <button className="flex items-center gap-3 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group">
-              <span className="text-xl text-white/40 group-hover:text-white/60 transition-colors">🏛️</span>
-              <span className="text-white/60 group-hover:text-white/80 font-light transition-colors">
-                {whyTranslations.serveItems.government}
+            <button className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
+              <div className="flex items-center justify-between w-full">
+                <span className="text-white/60 group-hover:text-white/80 font-space-mono font-light transition-colors text-sm">
+                  {whyTranslations.serveItems.forestry}
+                </span>
+                <span className="text-lg text-white/40 group-hover:text-white/60 transition-colors ml-2">🌲</span>
+              </div>
+              <span className="text-[11px] text-white/40 group-hover:text-white/50 transition-colors font-light">
+                {whyTranslations.serveItems.forestryDesc}
               </span>
             </button>
-            <button className="flex items-center gap-3 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group">
-              <span className="text-xl text-white/40 group-hover:text-white/60 transition-colors">🔬</span>
-              <span className="text-white/60 group-hover:text-white/80 font-light transition-colors">
-                {whyTranslations.serveItems.research}
+            <button className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
+              <div className="flex items-center justify-between w-full">
+                <span className="text-white/60 group-hover:text-white/80 font-space-mono font-light transition-colors text-sm">
+                  {whyTranslations.serveItems.infrastructure}
+                </span>
+                <span className="text-lg text-white/40 group-hover:text-white/60 transition-colors ml-2">🏗️</span>
+              </div>
+              <span className="text-[11px] text-white/40 group-hover:text-white/50 transition-colors font-light">
+                {whyTranslations.serveItems.infrastructureDesc}
               </span>
             </button>
-            <button className="flex items-center gap-3 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group">
-              <span className="text-xl text-white/40 group-hover:text-white/60 transition-colors">📊</span>
-              <span className="text-white/60 group-hover:text-white/80 font-light transition-colors">
-                {whyTranslations.serveItems.consultants}
+            <button className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
+              <div className="flex items-center justify-between w-full">
+                <span className="text-white/60 group-hover:text-white/80 font-space-mono font-light transition-colors text-sm">
+                  {whyTranslations.serveItems.security}
+                </span>
+                <span className="text-lg text-white/40 group-hover:text-white/60 transition-colors ml-2">🔒</span>
+              </div>
+              <span className="text-[11px] text-white/40 group-hover:text-white/50 transition-colors font-light">
+                {whyTranslations.serveItems.securityDesc}
+              </span>
+            </button>
+            <button className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
+              <div className="flex items-center justify-between w-full">
+                <span className="text-white/60 group-hover:text-white/80 font-space-mono font-light transition-colors text-sm">
+                  {whyTranslations.serveItems.government}
+                </span>
+                <span className="text-lg text-white/40 group-hover:text-white/60 transition-colors ml-2">🏛️</span>
+              </div>
+              <span className="text-[11px] text-white/40 group-hover:text-white/50 transition-colors font-light">
+                {whyTranslations.serveItems.governmentDesc}
+              </span>
+            </button>
+            <button className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
+              <div className="flex items-center justify-between w-full">
+                <span className="text-white/60 group-hover:text-white/80 font-space-mono font-light transition-colors text-sm">
+                  {whyTranslations.serveItems.research}
+                </span>
+                <span className="text-lg text-white/40 group-hover:text-white/60 transition-colors ml-2">🔬</span>
+              </div>
+              <span className="text-[11px] text-white/40 group-hover:text-white/50 transition-colors font-light">
+                {whyTranslations.serveItems.researchDesc}
               </span>
             </button>
           </div>
