@@ -1,7 +1,6 @@
 import { PosthogProvider } from "@/components/posthog-provider";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Analytics } from '@vercel/analytics/next';
-import { Header } from "@/components/header";
 import { Space_Mono } from "next/font/google";
 import Script from "next/script";
 
@@ -38,8 +37,6 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <Header />
-
             <main>{children}</main>
           </ThemeProvider>
         </PosthogProvider>

@@ -7,6 +7,7 @@ import { GallerySection } from "./_components/gallery-section";
 import { WhatSection } from "./_components/what-section";
 import { CTASection } from "./_components/cta-section";
 import { Footer } from "./_components/footer";
+import { Header } from "@/components/header";
 
 export default async function LandingPage({
   params,
@@ -19,6 +20,10 @@ export default async function LandingPage({
 
   return (
     <div className="min-h-screen bg-[#0A0F08] text-white">
+      <Header 
+        scheduleText={dictionary.hero.schedule}
+        solutionsText={dictionary.why.solutions}
+      />
       <HeroSection heroTranslations={dictionary.hero} />
       <WhySection whyTranslations={dictionary.why} />
       <GallerySection locale={locale} />

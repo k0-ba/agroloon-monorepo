@@ -177,7 +177,7 @@ export function WhySection({ whyTranslations }: WhySectionProps) {
             </button>
           </div>
           <div className="flex justify-center mt-12">
-            <button className="px-8 py-4 bg-white/15 hover:bg-white/25 border border-white/30 hover:border-white/50 rounded-full text-white/90 hover:text-white transition-all font-medium">
+            <button className="px-8 py-4 border border-white/30 hover:border-white/50 rounded-full text-white/90 hover:text-white transition-all font-medium">
               {whyTranslations.solutions}
             </button>
           </div>
