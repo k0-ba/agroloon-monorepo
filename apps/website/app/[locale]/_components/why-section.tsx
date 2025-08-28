@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import Link from "next/link";
 import { Dictionary } from "../_dictionaries";
 import {
   Accordion,
@@ -87,7 +88,7 @@ export function WhySection({ whyTranslations }: WhySectionProps) {
             </span>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <button className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
+            <Link href="/solutions#agriculture" className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
               <div className="flex items-center justify-between w-full">
                 <span className="text-white/60 group-hover:text-white/80 font-space-mono font-light transition-colors text-sm">
                   {whyTranslations.serveItems.agriculture}
@@ -97,8 +98,8 @@ export function WhySection({ whyTranslations }: WhySectionProps) {
               <span className="text-[11px] text-white/40 group-hover:text-white/50 transition-colors font-light">
                 {whyTranslations.serveItems.agriculturalDesc}
               </span>
-            </button>
-            <button className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
+            </Link>
+            <Link href="/solutions#insurance" className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
               <div className="flex items-center justify-between w-full">
                 <span className="text-white/60 group-hover:text-white/80 font-space-mono font-light transition-colors text-sm">
                   {whyTranslations.serveItems.insurance}
@@ -108,8 +109,8 @@ export function WhySection({ whyTranslations }: WhySectionProps) {
               <span className="text-[11px] text-white/40 group-hover:text-white/50 transition-colors font-light">
                 {whyTranslations.serveItems.insuranceDesc}
               </span>
-            </button>
-            <button className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
+            </Link>
+            <Link href="/solutions#emergency" className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
               <div className="flex items-center justify-between w-full">
                 <span className="text-white/60 group-hover:text-white/80 font-space-mono font-light transition-colors text-sm">
                   {whyTranslations.serveItems.emergency}
@@ -119,8 +120,8 @@ export function WhySection({ whyTranslations }: WhySectionProps) {
               <span className="text-[11px] text-white/40 group-hover:text-white/50 transition-colors font-light">
                 {whyTranslations.serveItems.emergencyDesc}
               </span>
-            </button>
-            <button className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
+            </Link>
+            <Link href="/solutions#forestry" className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
               <div className="flex items-center justify-between w-full">
                 <span className="text-white/60 group-hover:text-white/80 font-space-mono font-light transition-colors text-sm">
                   {whyTranslations.serveItems.forestry}
@@ -130,8 +131,8 @@ export function WhySection({ whyTranslations }: WhySectionProps) {
               <span className="text-[11px] text-white/40 group-hover:text-white/50 transition-colors font-light">
                 {whyTranslations.serveItems.forestryDesc}
               </span>
-            </button>
-            <button className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
+            </Link>
+            <Link href="/solutions#infrastructure" className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
               <div className="flex items-center justify-between w-full">
                 <span className="text-white/60 group-hover:text-white/80 font-space-mono font-light transition-colors text-sm">
                   {whyTranslations.serveItems.infrastructure}
@@ -141,8 +142,8 @@ export function WhySection({ whyTranslations }: WhySectionProps) {
               <span className="text-[11px] text-white/40 group-hover:text-white/50 transition-colors font-light">
                 {whyTranslations.serveItems.infrastructureDesc}
               </span>
-            </button>
-            <button className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
+            </Link>
+            <Link href="/solutions#security" className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
               <div className="flex items-center justify-between w-full">
                 <span className="text-white/60 group-hover:text-white/80 font-space-mono font-light transition-colors text-sm">
                   {whyTranslations.serveItems.security}
@@ -152,8 +153,8 @@ export function WhySection({ whyTranslations }: WhySectionProps) {
               <span className="text-[11px] text-white/40 group-hover:text-white/50 transition-colors font-light">
                 {whyTranslations.serveItems.securityDesc}
               </span>
-            </button>
-            <button className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
+            </Link>
+            <Link href="/solutions#government" className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
               <div className="flex items-center justify-between w-full">
                 <span className="text-white/60 group-hover:text-white/80 font-space-mono font-light transition-colors text-sm">
                   {whyTranslations.serveItems.government}
@@ -163,8 +164,8 @@ export function WhySection({ whyTranslations }: WhySectionProps) {
               <span className="text-[11px] text-white/40 group-hover:text-white/50 transition-colors font-light">
                 {whyTranslations.serveItems.governmentDesc}
               </span>
-            </button>
-            <button className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
+            </Link>
+            <Link href="/solutions#research" className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
               <div className="flex items-center justify-between w-full">
                 <span className="text-white/60 group-hover:text-white/80 font-space-mono font-light transition-colors text-sm">
                   {whyTranslations.serveItems.research}
@@ -174,12 +175,14 @@ export function WhySection({ whyTranslations }: WhySectionProps) {
               <span className="text-[11px] text-white/40 group-hover:text-white/50 transition-colors font-light">
                 {whyTranslations.serveItems.researchDesc}
               </span>
-            </button>
+            </Link>
           </div>
           <div className="flex justify-center mt-12">
-            <button className="px-8 py-4 border border-white/30 hover:border-white/50 rounded-full text-white/90 hover:text-white transition-all font-medium">
-              {whyTranslations.solutions}
-            </button>
+            <Link href="/solutions">
+              <button className="px-8 py-4 border border-white/30 hover:border-white/50 rounded-full text-white/90 hover:text-white transition-all font-medium">
+                {whyTranslations.solutions}
+              </button>
+            </Link>
           </div>
         </motion.div>
       </div>
