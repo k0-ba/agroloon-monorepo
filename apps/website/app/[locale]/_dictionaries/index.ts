@@ -17,12 +17,22 @@ export type Dictionary = {
     readLess: string;
     whoWeServe: string;
     serveItems: {
-      farmers: string;
-      agribusinesses: string;
+      agriculture: string;
+      agriculturalDesc: string;
       insurance: string;
+      insuranceDesc: string;
+      emergency: string;
+      emergencyDesc: string;
+      forestry: string;
+      forestryDesc: string;
+      infrastructure: string;
+      infrastructureDesc: string;
+      security: string;
+      securityDesc: string;
       government: string;
+      governmentDesc: string;
       research: string;
-      consultants: string;
+      researchDesc: string;
     };
     solutions: string;
   };
