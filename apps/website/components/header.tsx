@@ -12,9 +12,9 @@ type UseCase = {
   subtitle: string;
   emoji: string;
   description: string;
-  problem: any;
-  solution: any;
-  benefits: any;
+  problem: unknown;
+  solution: unknown;
+  benefits: unknown;
 };
 
 interface HeaderProps {

@@ -371,7 +371,7 @@ export default function SolutionsPage() {
               Solutions for Every Industry
             </h1>
             <p className="text-white/70 font-light text-lg md:text-xl max-w-3xl mx-auto mb-12">
-              Discover how Agroloon's stratospheric intelligence transforms operations across diverse sectors with unprecedented visibility and real-time insights.
+              Discover how Agroloon&apos;s stratospheric intelligence transforms operations across diverse sectors with unprecedented visibility and real-time insights.
             </p>
           </motion.div>
         </div>

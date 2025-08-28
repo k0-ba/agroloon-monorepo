@@ -5,12 +5,7 @@ import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { Dictionary } from "../_dictionaries";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+
 
 interface WhySectionProps {
   whyTranslations: Dictionary["why"];
@@ -87,17 +82,22 @@ export function WhySection({ whyTranslations }: WhySectionProps) {
               {whyTranslations.whoWeServe}
             </span>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <Link href="/solutions#agriculture" className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
               <div className="flex items-center justify-between w-full">
                 <span className="text-white/60 group-hover:text-white/80 font-space-mono font-light transition-colors text-sm">
-                  {whyTranslations.serveItems.agriculture}
+                  {whyTranslations.serveItems.farmers}
                 </span>
                 <span className="text-lg text-white/40 group-hover:text-white/60 transition-colors ml-2">🌾</span>
               </div>
-              <span className="text-[11px] text-white/40 group-hover:text-white/50 transition-colors font-light">
-                {whyTranslations.serveItems.agriculturalDesc}
-              </span>
+            </Link>
+            <Link href="/solutions#agribusiness" className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
+              <div className="flex items-center justify-between w-full">
+                <span className="text-white/60 group-hover:text-white/80 font-space-mono font-light transition-colors text-sm">
+                  {whyTranslations.serveItems.agribusinesses}
+                </span>
+                <span className="text-lg text-white/40 group-hover:text-white/60 transition-colors ml-2">🏢</span>
+              </div>
             </Link>
             <Link href="/solutions#insurance" className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
               <div className="flex items-center justify-between w-full">
@@ -106,53 +106,6 @@ export function WhySection({ whyTranslations }: WhySectionProps) {
                 </span>
                 <span className="text-lg text-white/40 group-hover:text-white/60 transition-colors ml-2">🛡️</span>
               </div>
-              <span className="text-[11px] text-white/40 group-hover:text-white/50 transition-colors font-light">
-                {whyTranslations.serveItems.insuranceDesc}
-              </span>
-            </Link>
-            <Link href="/solutions#emergency" className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
-              <div className="flex items-center justify-between w-full">
-                <span className="text-white/60 group-hover:text-white/80 font-space-mono font-light transition-colors text-sm">
-                  {whyTranslations.serveItems.emergency}
-                </span>
-                <span className="text-lg text-white/40 group-hover:text-white/60 transition-colors ml-2">🚨</span>
-              </div>
-              <span className="text-[11px] text-white/40 group-hover:text-white/50 transition-colors font-light">
-                {whyTranslations.serveItems.emergencyDesc}
-              </span>
-            </Link>
-            <Link href="/solutions#forestry" className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
-              <div className="flex items-center justify-between w-full">
-                <span className="text-white/60 group-hover:text-white/80 font-space-mono font-light transition-colors text-sm">
-                  {whyTranslations.serveItems.forestry}
-                </span>
-                <span className="text-lg text-white/40 group-hover:text-white/60 transition-colors ml-2">🌲</span>
-              </div>
-              <span className="text-[11px] text-white/40 group-hover:text-white/50 transition-colors font-light">
-                {whyTranslations.serveItems.forestryDesc}
-              </span>
-            </Link>
-            <Link href="/solutions#infrastructure" className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
-              <div className="flex items-center justify-between w-full">
-                <span className="text-white/60 group-hover:text-white/80 font-space-mono font-light transition-colors text-sm">
-                  {whyTranslations.serveItems.infrastructure}
-                </span>
-                <span className="text-lg text-white/40 group-hover:text-white/60 transition-colors ml-2">🏗️</span>
-              </div>
-              <span className="text-[11px] text-white/40 group-hover:text-white/50 transition-colors font-light">
-                {whyTranslations.serveItems.infrastructureDesc}
-              </span>
-            </Link>
-            <Link href="/solutions#security" className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
-              <div className="flex items-center justify-between w-full">
-                <span className="text-white/60 group-hover:text-white/80 font-space-mono font-light transition-colors text-sm">
-                  {whyTranslations.serveItems.security}
-                </span>
-                <span className="text-lg text-white/40 group-hover:text-white/60 transition-colors ml-2">🔒</span>
-              </div>
-              <span className="text-[11px] text-white/40 group-hover:text-white/50 transition-colors font-light">
-                {whyTranslations.serveItems.securityDesc}
-              </span>
             </Link>
             <Link href="/solutions#government" className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
               <div className="flex items-center justify-between w-full">
@@ -161,9 +114,6 @@ export function WhySection({ whyTranslations }: WhySectionProps) {
                 </span>
                 <span className="text-lg text-white/40 group-hover:text-white/60 transition-colors ml-2">🏛️</span>
               </div>
-              <span className="text-[11px] text-white/40 group-hover:text-white/50 transition-colors font-light">
-                {whyTranslations.serveItems.governmentDesc}
-              </span>
             </Link>
             <Link href="/solutions#research" className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
               <div className="flex items-center justify-between w-full">
@@ -172,9 +122,14 @@ export function WhySection({ whyTranslations }: WhySectionProps) {
                 </span>
                 <span className="text-lg text-white/40 group-hover:text-white/60 transition-colors ml-2">🔬</span>
               </div>
-              <span className="text-[11px] text-white/40 group-hover:text-white/50 transition-colors font-light">
-                {whyTranslations.serveItems.researchDesc}
-              </span>
+            </Link>
+            <Link href="/solutions#consultants" className="flex flex-col items-start gap-1 p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-lg transition-all group text-left">
+              <div className="flex items-center justify-between w-full">
+                <span className="text-white/60 group-hover:text-white/80 font-space-mono font-light transition-colors text-sm">
+                  {whyTranslations.serveItems.consultants}
+                </span>
+                <span className="text-lg text-white/40 group-hover:text-white/60 transition-colors ml-2">💼</span>
+              </div>
             </Link>
           </div>
           <div className="flex justify-center mt-12">

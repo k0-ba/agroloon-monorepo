@@ -11,6 +11,9 @@
     "prebuild": "bun run generate-middleware-config"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.5.0",
+    "posthog-js": "^1.232.4",
+    "react-calendly": "^4.3.1",
     "@formatjs/intl-localematcher": "^0.6.0",
     "@hookform/resolvers": "^4.1.3",
     "@radix-ui/react-accordion": "^1.2.3",

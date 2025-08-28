@@ -25,7 +25,7 @@ export function CTASection({ ctaTranslations }: CTASectionProps) {
               Discover the power of stratospheric intelligence.
             </p>
             <p className="text-justify">
-              With Agroloon's advanced high-altitude imaging solutions, gain unprecedented insights that transform your operations across diverse sectors.
+              With Agroloon&apos;s advanced high-altitude imaging solutions, gain unprecedented insights that transform your operations across diverse sectors.
             </p>
           </div>
           <div className="flex flex-col md:flex-row items-center justify-center gap-6">
